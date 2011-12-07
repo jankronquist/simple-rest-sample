@@ -10,8 +10,7 @@ public class HerokuResource {
 	@GET
 	@Path("/get")
 	public Response get(@QueryParam("param") String msg) {
-		String output = "Jersey say : " + msg;
-		return Response.ok(output).build();
+		return Response.ok("param was: " + msg).build();
 	}
 
 }
